@@ -194,3 +194,23 @@ ul {
   transform: scale(1.03);
 
 }
+
+/* CONTACT SECTION SIDE BY SIDE */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Make form wider */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-details {
+  flex: 1;
+}
