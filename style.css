@@ -3,7 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background: #1e1e1e;          /* Softer dark gray */
+  background: #1e1e1e; /* Softer dark gray */
   color: #e8e8e8;
   line-height: 1.6;
 }
@@ -18,17 +18,17 @@ body {
 
 /* ===== HEADER ===== */
 .header {
-  background: #282c34;          /* VS Code dark gray */
+  background: #282c34; /* VS Code dark gray */
   text-align: center;
   padding: 60px 20px;
   color: #ffffff;
-  border-bottom: 3px solid #4cc9f0;  /* Cyan accent */
+  border-bottom: 3px solid #4cc9f0; /* Cyan accent */
 }
 
 .header h1 {
   font-size: 42px;
   margin-bottom: 10px;
-  color: #4cc9f0;               /* Accent color */
+  color: #4cc9f0; /* Accent color */
 }
 
 .role {
@@ -61,7 +61,7 @@ ul {
 
 /* ===== PROJECT CARDS ===== */
 .project {
-  background: #2e3241;          /* lighter card */
+  background: #2e3241; /* lighter card */
   padding: 15px;
   margin-bottom: 15px;
   border-left: 4px solid #4cc9f0;
@@ -70,7 +70,7 @@ ul {
 }
 
 .project:hover {
-  background: #3a3f52;          /* hover soft effect */
+  background: #3a3f52; /* hover soft effect */
 }
 
 /* ===== FOOTER ===== */
@@ -95,22 +95,21 @@ ul {
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
-    object-fit: fill;
-    border-radius: 50%;
-    border: 3px solid #3c3c3c;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+  width: 180px;
+  height: 180px;
+  object-fit: fill;
+  border-radius: 50%;
+  border: 3px solid #3c3c3c;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 /* Hover Animation */
 .profile-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(100, 200, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(100, 200, 255, 0.3);
 }
-
 
 /* ===== COMPANY LOGO ===== */
 .company-logo {
@@ -123,4 +122,74 @@ ul {
 
 .company-logo:hover {
   transform: scale(1.05);
+}
+
+/* ===== EDUCATION TABLE ===== */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.edu-table th,
+.edu-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.edu-table th {
+  background: #99c2cf;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+.edu-table tr:nth-child(even) {
+  background: #2e3241;
+}
+
+.edu-table tr:hover {
+  background: #3a3f52;
+  transition: 0.3s ease-in-out;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #2e3241;
+  border: 1px solid #4cc9f0;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #90e0ef;
+  box-shadow: 0 0 8px rgba(80, 180, 255, 0.4);
+}
+
+.btn-send {
+  background: #4cc9f0;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+  background: #90e0ef;
+  transform: scale(1.03);
 }
