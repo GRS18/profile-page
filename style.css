@@ -212,5 +212,23 @@ ul {
 }
 
 .contact-details {
-  flex: 1;
+  flex: 0.8
+}
+
+.contact-right {
+  flex: 1.2;   /* bigger form */
+}
+
+/* ---- New Section ---- */
+body {
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
 }
