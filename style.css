@@ -267,11 +267,32 @@ body {
   border-radius: 25px;          /* pill shape */
   font-weight: bold;
   font-size: 14px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, 
+  background 0.3s ease;
   cursor: default;
 }
 
 .skill-tags span:hover {
   background: #90e0ef;           /* lighter cyan on hover */
   transform: scale(1.1);       
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4cc9f0; /* matches your theme */
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #90e0ef;
+  transform: scale(1.1);
 }
