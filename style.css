@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+  /* ===== GLOBAL ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -136,7 +136,7 @@ ul {
   width: 90px;
   height: auto;
   border-radius: 6px;
-  margin: 0;  /* remove bottom space */
+  margin: 0;
 }
 
 .company-logo:hover {
@@ -235,7 +235,7 @@ ul {
 }
 
 .contact-right {
-  flex: 1.2;   /* bigger form */
+  flex: 1.2; 
 }
 
 /* ---- New Section ---- */
@@ -261,7 +261,7 @@ body {
 }
 
 .skill-tags span {
-  background: #f7f9fa;          /* cyan bubble */
+  background: #f7f9fa;         /* whitesmoke */
   color: #1e1e1e;               /* dark text */
   padding: 8px 15px;
   border-radius: 25px;          /* pill shape */
@@ -273,5 +273,5 @@ body {
 
 .skill-tags span:hover {
   background: #90e0ef;           /* lighter cyan on hover */
-  transform: scale(1.1);         /* subtle pop effect */
+  transform: scale(1.1);       
 }
