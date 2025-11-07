@@ -252,3 +252,26 @@ body {
   padding: 10px 20px;
 }
 
+/* Skills Section css */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.skill-tags span {
+  background: #f7f9fa;          /* cyan bubble */
+  color: #1e1e1e;               /* dark text */
+  padding: 8px 15px;
+  border-radius: 25px;          /* pill shape */
+  font-weight: bold;
+  font-size: 14px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+.skill-tags span:hover {
+  background: #90e0ef;           /* lighter cyan on hover */
+  transform: scale(1.1);         /* subtle pop effect */
+}
