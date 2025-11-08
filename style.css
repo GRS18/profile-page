@@ -81,19 +81,48 @@ ul {
 }
 
 /* ===== PROJECT CARDS ===== */
-.project {
-  background: #2e3241; /* lighter card */
-  padding: 15px;
-  margin-bottom: 15px;
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 1;
+  background: #2e3241;
+  padding: 20px;
+  border-radius: 10px;
   border-left: 4px solid #4cc9f0;
-  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #3a3f52;
+}
+
+.btn-report {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4cc9f0;
+  color: #1e1e1e;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 
-.project:hover {
-  background: #3a3f52; /* hover soft effect */
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+.btn-report:hover {
+  background: #90e0ef;
+  transform: scale(1.05);
+}
+
+.project-card .btn-report {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* ===== FOOTER ===== */
