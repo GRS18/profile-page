@@ -34,13 +34,23 @@ body {
   padding: 60px 20px;
   color: #ffffff;
   border-bottom: 3px solid #4cc9f0; /* Cyan accent */
+  overflow: hidden;
 }
 
 .header h1 {
   font-size: 42px;
   margin-bottom: 10px;
-  color: #4cc9f0; /* Accent color */
+  color: #4cc9f0; /* Normal color stays fixed */
+  text-shadow: none; /* No glow */
+  transition: transform 0.3s ease; /* Only transform will animate */
+  cursor: pointer;
 }
+
+.header h1:hover {
+  transform: scale(1.1) rotate(-1deg);
+}
+
+
 
 .role {
   color: #9bc9ff;
@@ -184,6 +194,68 @@ ul {
   background: #3a3f52;
   transition: 0.3s ease-in-out;
 }
+
+/* Hobbies Section */
+#hobbies h2 {
+  color: #4cc9f0;
+  border-left: 5px solid #4cc9f0;
+  padding-left: 12px;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Hobbies Container */
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Hobby Card */
+.hobby-card {
+  background: linear-gradient(135deg, #3a3f52, #2e3241);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.hobby-card:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 12px 25px rgba(76,201,240,0.5);
+}
+
+/* Hobby Icon */
+.hobby-icon {
+  font-size: 50px;
+  margin-bottom: 12px;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Floating Animation for Icons */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hobby Title */
+.hobby-card h3 {
+  font-size: 18px;
+  color: #90e0ef;
+  margin-bottom: 8px;
+}
+
+/* Hobby Description */
+.hobby-card p {
+  font-size: 14px;
+  color: #e8e8e8;
+}
+
 
 /* ===== CONTACT FORM ===== */
 .contact-form {
