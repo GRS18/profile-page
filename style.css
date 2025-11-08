@@ -10,7 +10,42 @@ body {
   background: #1e1e1e; /* Softer dark gray */
   color: #e8e8e8;
   line-height: 1.6;
+  overflow-x: hidden;
 }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+  border-bottom: 2px solid #4cc9f0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.navbar ul li a {
+  color: #4cc9f0;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #90e0ef;
+  transform: scale(1.1);
+}
+
 
 /* Common layout */
 .section {
@@ -20,6 +55,8 @@ body {
   padding: 40px 0;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-x: hidden;
+  scroll-margin-top: 80px;
 }
 
 .section:hover {
@@ -157,7 +194,7 @@ ul {
   cursor: pointer;
 }
 
-/* Hover Animation */
+/* ===== Hover Animation ===== */
 .profile-img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(100, 200, 255, 0.3);
@@ -224,7 +261,7 @@ ul {
   transition: 0.3s ease-in-out;
 }
 
-/* Hobbies Section */
+/* ===== Hobbies Section ===== */
 #hobbies h2 {
   color: #4cc9f0;
   border-left: 5px solid #4cc9f0;
@@ -365,7 +402,7 @@ body {
   padding: 10px 20px;
 }
 
-/* Skills Section css */
+/* ===== Skills Section ===== */
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -389,7 +426,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Back to Top CSS */
+/* ===== Back to Top CSS ===== */
 .back-to-top {
   position: fixed;
   bottom: 30px;
