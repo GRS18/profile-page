@@ -1,4 +1,8 @@
-  /* ===== GLOBAL ===== */
+/* ===== GLOBAL ===== */
+html {
+  scroll-behavior: smooth;    /*Make Scroll smooth to whole page from Bottom to Top*/
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -14,6 +18,13 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 40px 0;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);        
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== HEADER ===== */
@@ -71,6 +82,8 @@ ul {
 
 .project:hover {
   background: #3a3f52; /* hover soft effect */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 /* ===== FOOTER ===== */
@@ -132,7 +145,7 @@ ul {
   margin-top: 0;
 }
 
- .company-logo {
+.company-logo {
   width: 90px;
   height: auto;
   border-radius: 6px;
@@ -211,7 +224,6 @@ ul {
 .btn-send:hover {
   background: #90e0ef;
   transform: scale(1.03);
-
 }
 
 /* CONTACT SECTION SIDE BY SIDE */
@@ -231,19 +243,19 @@ ul {
 }
 
 .contact-details {
-  flex: 0.8
+  flex: 0.8;
 }
 
 .contact-right {
-  flex: 1.2; 
+  flex: 1.2;
 }
 
 /* ---- New Section ---- */
 body {
-  background-image: url('images/bg.jpg');
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-position: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -261,22 +273,22 @@ body {
 }
 
 .skill-tags span {
-  background: #f7f9fa;         /* whitesmoke */
-  color: #1e1e1e;               /* dark text */
+  background: linear-gradient(135deg, #f7f9fa, #dce6f0);
+  color: #1e1e1e; /* dark text */
   padding: 8px 15px;
-  border-radius: 25px;          /* pill shape */
+  border-radius: 25px; /* pill shape */
   font-weight: bold;
   font-size: 14px;
-  transition: transform 0.3s ease, 
-  background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
   cursor: default;
 }
 
 .skill-tags span:hover {
-  background: #90e0ef;           /* lighter cyan on hover */
-  transform: scale(1.1);       
+  background: #90e0ef; /* lighter cyan on hover */
+  transform: scale(1.1);
 }
 
+/* Back to Top CSS */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -299,4 +311,12 @@ body {
   background: #4cc9f0;
   color: #1e1e1e;
   transform: scale(1.2);
+}
+
+.back-to-top {
+  box-shadow: 0 4px 15px rgba(76, 201, 240, 0.6);
+}
+
+.back-to-top:hover {
+  box-shadow: 0 6px 25px rgba(76, 201, 240, 0.8);
 }
