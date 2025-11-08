@@ -104,8 +104,6 @@ ul {
 }
 
 .btn-report {
-  display: inline-block;
-  margin-top: 10px;
   background: #4cc9f0;
   color: #1e1e1e;
   padding: 8px 15px;
@@ -113,13 +111,15 @@ ul {
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  display: inline-block;
 }
 
 .btn-report:hover {
-  background: #90e0ef;
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(76, 201, 240, 0.6);
+  color: #1e1e1e !important;   /* text stays same */
+  background: #4cc9f0 !important; /* background stays same */
 }
-
 .project-card .btn-report {
   margin-top: auto;
   align-self: flex-start;
