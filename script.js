@@ -50,3 +50,58 @@ const profile = {
     { name: "Nature Sketcher", icon: "🌿", description: "Sketching nature scenes." }
   ]
 };
+
+// Functions
+function introduce({ name, role, location }) {
+  return `Hello! I'm ${name}, working as a ${role} in ${location}.`;
+}
+
+function getSkillList(skills) {
+  return skills.join(", ");
+}
+
+function countProjects(projects) {
+  return projects.length;
+}
+
+function summarizeProjects(projects) {
+  return projects.map(({ name, tech }) => `${name} — (${tech.join(", ")})`);
+}
+
+function calculateExperienceYears(experience) {
+  const currentYear = new Date().getFullYear();
+
+  return experience
+    .map(({ startYear, endYear }) => (endYear ?? currentYear) - startYear)
+    .reduce((sum, years) => sum + years, 0);
+}
+
+function formatEducation(education) {
+  return education.map((edu) => {
+    if (edu.from && edu.to) {
+      return `${edu.course} — ${edu.institute} (${edu.from}-${edu.to})`;
+    }
+    return `${edu.course} — ${edu.institute} (${edu.year})`;
+  });
+}
+
+function listHobbies(hobbies) {
+  return hobbies.map(({ icon, name, description }) => `${icon} ${name}: ${description}`);
+}
+
+// Main summary
+function getSummary() {
+  return {
+    intro: introduce(profile),
+    skills: getSkillList(profile.skills),
+    totalProjects: countProjects(profile.projects),
+    projects: summarizeProjects(profile.projects),
+    experienceYears: calculateExperienceYears(profile.experience),
+    educationList: formatEducation(profile.education),
+    hobbyList: listHobbies(profile.hobbies)
+  };
+}
+
+// Create summary
+const summary = getSummary();
+console.log(summary);
