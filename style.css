@@ -1,3 +1,5 @@
+/* Style.css */
+
 /* ===== GLOBAL ===== */
 html {
   scroll-behavior: smooth;    /*Make Scroll smooth to whole page from Bottom to Top*/
@@ -391,7 +393,6 @@ ul {
 
 /* ---- New Section ---- */
 body {
-  background-image: url("images/bg.jpg");
   background-size: cover;
   background-position: center;
   font-family: "Poppins", sans-serif;
