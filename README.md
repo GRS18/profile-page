@@ -1,6 +1,14 @@
-# Profile page made by GIRISH SHINDE.
+## Profile page made by GIRISH SHINDE.
 
-Technology stack - 
+## Environment
+- Editor: Visual Studio Code (VS Code)
+
+## Git Commands Used
+    - git add
+    - git commit -m ""
+    - git push origin main
+
+## Technology stack - 
  - HTML
  - CSS
  - JavaScript:
@@ -12,7 +20,7 @@ Technology stack -
     Functions
     Arrays
     Objects and more..
-    
+
 * This project does NOT use browser-specific features like:
     - DOM (document, window)
     - Events (onclick, etc.)
