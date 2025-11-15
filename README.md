@@ -9,22 +9,22 @@
     - git push origin main
 
 ## Technology stack - 
- - HTML
- - CSS
- - JavaScript:
-     - Variables
-     - Data Types
-     - Operators
-     - Conditions (if-else)
-     - Loops (for, while)
-     - Functions
-     - Arrays
-     - Objects and more..
+- HTML
+- CSS
+- JavaScript:
+    - Variables
+    - Data Types
+    - Operators
+    - Conditions (if-else)
+    - Loops (for, while)
+    - Functions
+    - Arrays
+    - Objects and more..
 
 * This project does NOT use browser-specific features like:
-    - DOM (document, window)
-    - Events (onclick, etc.)
-    - HTML element manipulation
+- DOM (document, window)
+- Events (onclick, etc.)
+- HTML element manipulation
 (Only Core JavaScript is used.)
 
 // How to See JavaScript Output //
