@@ -12,14 +12,14 @@
  - HTML
  - CSS
  - JavaScript:
-    Variables
-    Data Types
-    Operators
-    Conditions (if-else)
-    Loops (for, while)
-    Functions
-    Arrays
-    Objects and more..
+     - Variables
+     - Data Types
+     - Operators
+     - Conditions (if-else)
+     - Loops (for, while)
+     - Functions
+     - Arrays
+     - Objects and more..
 
 * This project does NOT use browser-specific features like:
     - DOM (document, window)
